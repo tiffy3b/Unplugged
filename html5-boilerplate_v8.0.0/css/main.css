@@ -86,7 +86,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /*****Header*****/
+   /*****Header and foot base styles*****/
 header,
 footer {
   display: flex;
@@ -94,95 +94,42 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+header {
+  padding: 15px 0;
+}
 header .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 .header-divider {
-
+  width: 100%;
 }
 header nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 100%;
 }
 header nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
-/*****Mobile main homepage*****/
-.hero-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-.features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.features-items{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-article {
-
-}
-.reviews {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-/*****FAQ mobile*****/
-.faq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-.faq content-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-/*****About mobile*****/
-.mission {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
-}
-.contact-section {
-  display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
-}
-/*****Footer*****/
 footer {
 
 }
-.footer-content {
-
+footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
 }
-.contact {
 
+.footer p {
+  margin: 0;
 }
-.social {
+footer .contact {
+  margin-bottom: 45px;
 
 }
 .social-icons {
@@ -197,9 +144,100 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
-.copyright {
 
+/*****Mobile main homepage*****/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.hero-area h1 {
+  padding: 56px 0;
+}
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.form-description h3 {
+  padding: 30px 0 38px 0;
+}
+.form text {
+  padding: 18px 0 18px 0;
+}
+.form button {
+  padding-bottom: 52px;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: row wrap;
+}
+.features h2{
+  margin-bottom: 65px;
+}
+.features p {
+  margin: 0;
+}
+.features-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.features article {
+  width: 55%;
+  margin: 60px 0;
+}
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.reviews h2 {
+  margin-bottom: 35px;
+}
+.reviews h3 {
+  width: 50%;
+  margin: 20px 0;
+}
+/*****FAQ mobile*****/
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.faq .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+.faq h2{
+  margin-bottom: 50px;
+}
+/*****About mobile*****/
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.contact p {
+  margin: 0;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
