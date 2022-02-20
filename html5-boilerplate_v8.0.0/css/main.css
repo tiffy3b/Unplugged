@@ -85,7 +85,11 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ========================================================================== */  
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
    /*****Header and foot base styles*****/
 header,
 footer {
@@ -94,10 +98,11 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+
 header {
   padding: 15px 0;
 }
-header .content-wrapper{
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,53 +111,63 @@ header .content-wrapper{
 }
 .header-divider {
   width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 header nav {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-footer {
-
+header nav ul li {
+  list-style-type: none;
 }
-footer .content-wrapper{
+footer {
+  flex-direction: column;
+}
+footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+  text-align: center;
 }
 
-.footer p {
+footer p {
   margin: 0;
 }
 footer .contact {
-  margin-bottom: 45px;
-
+  margin-bottom: 50px; 
 }
-.social-icons {
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
 }
-.social p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+footer .copyright {
+  margin: 20px 0;
 }
-
 /*****Mobile main homepage*****/
+
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
 }
 .hero-area h1 {
-  padding: 56px 0;
+  padding-top: 30px;
+
 }
 aside {
   display: flex;
@@ -160,68 +175,74 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-.form-description h3 {
-  padding: 30px 0 38px 0;
+.form-description {
+  padding: 25px 0 35px 0;
 }
-.form text {
-  padding: 18px 0 18px 0;
+.form [type="button"] {
+  margin: 16px 0 52px 0;
 }
-.form button {
-  padding-bottom: 52px;
+.form {
+  padding-bottom: 53px;
 }
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex: row wrap;
+  flex-flow: row wrap;
 }
 .features h2{
-  margin-bottom: 65px;
+  margin: 65px 0;
+
 }
 .features p {
   margin: 0;
+  text-align: center;
 }
-.features-items{
+.features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 .features article {
-  width: 55%;
-  margin: 60px 0;
+  width: 57%;
+  margin: 52px 0;
 }
 .reviews {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: left;
 }
 .reviews h2 {
-  margin-bottom: 35px;
+  margin: 50px 0 30px 0;
 }
 .reviews h3 {
   width: 50%;
   margin: 20px 0;
 }
+.example {
+  padding: 21px 0 45px 0;
+}
 /*****FAQ mobile*****/
-.faq {
+.faq-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-.faq .content-wrapper{
+.faq-section .content-wrapper {
+  margin: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
 }
 .faq h2{
   margin-bottom: 50px;
 }
 /*****About mobile*****/
+
 .mission {
   display: flex;
   justify-content: center;
@@ -234,10 +255,9 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-.contact p {
+.contact-content p {
   margin: 0;
 }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -326,15 +346,111 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  /*header style*/
+  header {
+    max-width: 640px;
+  }
+  header .content-wrapper {
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .header-divider {
+    display: none;
+  }
+
+  /*main*/
+  .content-wrapper {
+    max-width: 640px;
+  }
+  .hero-area h1 {
+    
+    padding-right: 70px;
+  }
+  aside .content-wrapper {
+    
+    margin: 45px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  aside .content-wrapper .form-description, aside .content-wrapper .form {
+   
+   margin: 0;
+  }
+  aside .content-wrapper .form {
+    padding-top: 30px;
+  }
+  .features h2 {
+    
+    margin: 62px 0 32px 10px;
+  }
+  .features-items article {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    flex: 1 0 205px;
+    margin: 45px;
+  }
+
+  .reviews .content-wrapper {
+    
+    margin: 0 60px;
+  }
+  .reviews article {
+    width: 50%;
+  }
+
+
+/*Footer*/
+  footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 100px 0;
+  }
+  footer .content-wrapper {
+    margin: 90px 0;
+  }
+  .footer-content {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .social, footer .contact {
+    padding: 0;
+  }
+
+/*About Page*/
+  .mission-content {
+    margin: 92px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+/*FAQ page*/
+
+.faq {
+  flex-basis: 40%;
+}
+}
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 }
 
 /* ==========================================================================
