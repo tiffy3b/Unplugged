@@ -86,7 +86,60 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */  
-.content-wrapper {
+/*General Styles */
+
+  html {
+    font-size: 16px;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #e2e3ed;
+  }
+  ul, li {
+    font-size: 1em;
+  }
+  header, footer {
+    background-color: #202322;
+  }
+  a {
+   color: #e2e3ed;
+   text-decoration: none; 
+  }
+  h1 {
+    font-size: 2.25em;
+  }
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+  }
+  h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+  }
+  p {
+    font-size: 1em;
+  }
+  img {
+
+  }
+  aside {
+    background-color: #527158;
+  }
+  .reviews {
+    background-color: #2a423a;
+  }
+  figure {
+
+  }
+  address {
+
+  }
+  .content-wrapper {
+
+  }
+  /*End Custom Style*/
+   .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
@@ -376,7 +429,9 @@ aside {
   }
 
   /*main*/
-
+  .hero-area h1 {
+    width: 85%;
+  }
   aside .content-wrapper {
     
     margin: 50px 0;
@@ -478,7 +533,7 @@ aside {
   }
   /*MAIN*/
   .hero-area h1 {
-    width: 70%;
+    width: 80%;
   }
   aside .content-wrapper .form-description, aside .content-wrapper .form {
     width: 35%;
