@@ -368,7 +368,7 @@ aside {
     display: none;
   }
   header nav {
-    width: 30%;
+    width: 25%;
   }
   header nav ul {
     width: 100%;
@@ -377,20 +377,16 @@ aside {
 
   /*main*/
 
-  .hero-area h1 {
-    
-    padding-right: 70px;
-  }
   aside .content-wrapper {
     
     margin: 50px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     flex-flow: row nowrap;
   }
   aside .content-wrapper .form-description, aside .content-wrapper .form {
-   width: 50%;
+   width: 40%;
    margin: 0;
   }
   aside .content-wrapper .form-description {
@@ -410,7 +406,9 @@ aside {
     display: flex;
     justify-content: flex-start;
   }
-
+  .reviews article .example {
+    width: 50%;
+  }
 
 /*Footer*/
   footer {
@@ -471,6 +469,47 @@ aside {
 }
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+  .content-wrapper {
+    max-width: 960px;
+  }
+  /*HEADER*/
+  header nav {
+    width: 20%;
+  }
+  /*MAIN*/
+  .hero-area h1 {
+    width: 70%;
+  }
+  aside .content-wrapper .form-description, aside .content-wrapper .form {
+    width: 35%;
+  }
+  .features h2 {
+    width: 88%;
+  }
+  .features-items article {
+    flex-basis: 20%;
+  }
+  .reviews article .example {
+    width: 47%;
+  }
+  /*FOOTER*/
+  footer .content-wrapper {
+    width: 90%;
+  }
+  /*ABOUT*/
+  .contact-section .content-wrapper h2 {
+    width: 90%;
+  }
+  .contact-content .chat {
+    padding-right: 100px;
+  }
+  /*FAQ*/
+  .faq-section .content-wrapper {
+    align-items: flex-start;
+  }
+  .faq-content {
+    flex-basis: 45%;
+  }
 }
 
 /* ==========================================================================
