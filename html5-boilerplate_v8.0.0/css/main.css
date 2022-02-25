@@ -87,7 +87,31 @@ textarea {
    Author's custom styles
    ========================================================================== */  
 /*General Styles */
-
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
   html {
     font-size: 16px;
   }
@@ -98,6 +122,8 @@ textarea {
   }
   ul, li {
     font-size: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
   }
   header, footer {
     background-color: #202322;
@@ -109,14 +135,17 @@ textarea {
   h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.25em;
+    font-weight: normal;
   }
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: normal;
   }
   h3, h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
+    font-weight: normal;
   }
   p {
     font-size: .875em;
@@ -234,14 +263,7 @@ aside {
 .form-description {
   padding: 25px 0 35px 0;
 }
-.form [type="button"] {
-  margin: 16px 0 52px 0;
-  line-height: 2.4375;
-}
-.form [type="button"], .form [type="text"] {
-  line-height: 2.4375;
-  width: 100%;
-}
+
 .form {
   padding-bottom: 53px;
 }
@@ -252,6 +274,7 @@ aside {
 }
 .features h2{
   margin: 65px 0;
+  padding-right: 13px;
 
 }
 .features p {
@@ -277,6 +300,7 @@ aside {
 }
 .reviews h2 {
   margin: 50px 0 30px 0;
+  padding-right: 25px;
 }
 .reviews h3 {
   width: 50%;
@@ -433,7 +457,7 @@ aside {
 
   /*main*/
   .hero-area h1 {
-    width: 85%;
+    width: 75%;
   }
   aside .content-wrapper {
     
@@ -462,7 +486,9 @@ aside {
     flex-basis: 35%;
     margin: 45px;
   }
-
+  .reviews h2 {
+    width: 70%;
+  }
   .reviews article {
     width: 50%;
     display: flex;
@@ -541,7 +567,7 @@ aside {
   }
   /*MAIN*/
   .hero-area h1 {
-    width: 80%;
+    width: 85%;
   }
   aside .content-wrapper .form-description, aside .content-wrapper .form {
     width: 35%;
