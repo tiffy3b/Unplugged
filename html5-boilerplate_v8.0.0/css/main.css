@@ -261,20 +261,17 @@ aside {
   flex-flow: row wrap;
 }
 .form-description {
-  padding: 25px 0 35px 0;
+  padding-bottom: 15px;
 }
 
-.form {
-  padding-bottom: 53px;
-}
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 .features h2{
-  margin: 65px 0;
-  padding-right: 13px;
+  margin: 0;
+  padding: 0 20px 60px 0;
 
 }
 .features p {
@@ -299,15 +296,15 @@ aside {
   text-align: left;
 }
 .reviews h2 {
-  margin: 50px 0 30px 0;
   padding-right: 25px;
+  margin: 0;
 }
 .reviews h3 {
   width: 50%;
   margin: 20px 0;
 }
 .example {
-  padding: 21px 0 45px 0;
+  padding-top: 25px;
 }
 /*****FAQ mobile*****/
 .faq-section {
