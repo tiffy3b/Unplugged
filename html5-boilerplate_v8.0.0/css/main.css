@@ -314,14 +314,17 @@ aside {
   flex-flow: row wrap;
 }
 .faq-section .content-wrapper {
-  margin: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-.faq h2{
-  margin-bottom: 50px;
+.faq-section h2 {
+  margin: 0;
+  padding-bottom: 25px;
+}
+.faq-content {
+  padding-bottom: 25px;
 }
 /*****About mobile*****/
 
@@ -330,6 +333,10 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.mission-content h2 {
+  margin: 0;
+  padding-right: 10px;
 }
 .contact-section {
   display: flex;
