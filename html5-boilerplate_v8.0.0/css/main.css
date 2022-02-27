@@ -166,9 +166,7 @@ input[type=button] {
   address {
     font-style: normal;
   }
-  .content-wrapper {
 
-  }
   /*End Custom Style*/
    .content-wrapper {
   width: 90%;
@@ -251,7 +249,7 @@ footer .copyright {
   flex-flow: row wrap;
 }
 .hero-area h1 {
-  padding-top: 30px;
+  margin: 0;
 
 }
 aside {
@@ -296,16 +294,15 @@ aside {
   text-align: left;
 }
 .reviews h2 {
-  padding-right: 25px;
+  width: 90%;
   margin: 0;
 }
 .reviews h3 {
-  width: 50%;
-  margin: 20px 0;
+  width: 55%;
+  padding: 20px 0;
+  margin: 0;
 }
-.example {
-  padding-top: 25px;
-}
+
 /*****FAQ mobile*****/
 .faq-section {
   display: flex;
@@ -436,6 +433,16 @@ aside {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+  /*General styles*/
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.25em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
   /*Tablet styles here*/
   .content-wrapper {
     max-width: 640px;
@@ -461,7 +468,7 @@ aside {
 
   /*main*/
   .hero-area h1 {
-    width: 75%;
+    width: 85%;
   }
   aside .content-wrapper {
     
@@ -491,15 +498,15 @@ aside {
     margin: 45px;
   }
   .reviews h2 {
-    width: 70%;
+    width: 80%;
   }
   .reviews article {
     width: 50%;
     display: flex;
     justify-content: flex-start;
   }
-  .reviews article .example {
-    width: 50%;
+  .reviews h3 {
+    width: 75%;
   }
 
 /*Footer*/
@@ -527,24 +534,23 @@ aside {
 
 /*About Page*/
   .mission-content {
-    margin: 92px 0;
+    margin: 35px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
   }
+
   .mission-content p {
     width: 47%;
   }
   .contact-section .content-wrapper h2 {
-    width: 80%;
+    width: 75%;
   }
   .contact-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  .contact-content .chat {
     padding-right: 20px;
   }
 
@@ -558,9 +564,23 @@ aside {
   }
   .faq-section h2 {
     width: 100%;
+
   }
 }
 @media only screen and (min-width: 1200px) {
+  /*custom styles*/
+  input[type=text], p, ul,li {
+    font-size: 1.125em;
+  }
+  input[type=button] {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 3.75em;
+  }
+  h3 {
+    font-size: 1.875em;
+  }
   /*Desktop styles here*/
   .content-wrapper {
     max-width: 960px;
@@ -571,7 +591,10 @@ aside {
   }
   /*MAIN*/
   .hero-area h1 {
-    width: 85%;
+    width: 70%;
+  }
+  aside .content-wrapper {
+    justify-content: space-around;
   }
   aside .content-wrapper .form-description, aside .content-wrapper .form {
     width: 35%;
@@ -582,9 +605,7 @@ aside {
   .features-items article {
     flex-basis: 20%;
   }
-  .reviews article .example {
-    width: 47%;
-  }
+
   /*FOOTER*/
   footer .content-wrapper {
     width: 90%;
