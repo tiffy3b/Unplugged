@@ -128,6 +128,7 @@ input[type=button] {
   header, footer {
     background-color: #202322;
   }
+
   a {
    color: #e2e3ed;
    text-decoration: none; 
@@ -152,17 +153,19 @@ input[type=button] {
     line-height: 1.285;
   }
   img {
-
+    width: 100%;
   }
+  figure {
+    margin: 0;
+  }
+
   aside, .mission, .faq-section {
     background-color: #527158;
   }
   .reviews, .contact-section {
     background-color: #2a423a;
   }
-  figure {
 
-  }
   address {
     font-style: normal;
   }
@@ -182,7 +185,7 @@ footer {
 }
 
 header {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 header .content-wrapper {
   display: flex;
@@ -194,19 +197,27 @@ header .content-wrapper {
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
+  margin: 15px 0;
+}
+header figure {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 50%;
 }
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  margin: 0;
   padding: 0;
 }
 header nav ul li {
@@ -244,6 +255,9 @@ footer .copyright {
 /*****Mobile main homepage*****/
 
 .hero-area {
+  background: url('../img/hero.jpg') center;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -252,17 +266,18 @@ footer .copyright {
   margin: 0;
 
 }
+aside .content-wrapper {
+  margin: 10px 0 50px 0;
+}
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-.form-description {
-  padding-bottom: 15px;
-}
-
 .features {
+  background: url('../img/unsplash.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -449,7 +464,9 @@ aside {
   }
   /*header style*/
   
-
+  header figure {
+    width: 35%;
+  }
   header .content-wrapper {
     width: 83%;
     flex-flow: row nowrap;
@@ -499,6 +516,9 @@ aside {
   }
   .reviews h2 {
     width: 80%;
+  }
+  .reviews figure {
+    width: 50%;
   }
   .reviews article {
     width: 50%;
