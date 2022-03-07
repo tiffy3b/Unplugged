@@ -311,6 +311,7 @@ aside {
 .reviews h2 {
   width: 90%;
   margin: 0;
+  padding-bottom: 30px;
 }
 .reviews h3 {
   width: 55%;
@@ -484,12 +485,16 @@ aside {
   }
 
   /*main*/
+  .hero-area {
+    min-height: 600px;
+  }
   .hero-area h1 {
     width: 85%;
+
   }
   aside .content-wrapper {
     
-    margin: 50px 0;
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -500,7 +505,7 @@ aside {
    margin: 0;
   }
   aside .content-wrapper .form-description {
-    padding: 0 0 90px 0;
+    padding: 0 0 70px 0;
   }
 
   .features-items {
@@ -517,16 +522,22 @@ aside {
   .reviews h2 {
     width: 80%;
   }
-  .reviews figure {
-    width: 50%;
-  }
-  .reviews article {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-  }
+
   .reviews h3 {
     width: 75%;
+    padding: 0;
+  }
+  .reviews .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+  .reviews figure, .reviews article {
+    width: 48%;
+  }
+  .reviews figure {
+    padding-top: 7px;
   }
 
 /*Footer*/
