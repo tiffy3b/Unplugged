@@ -282,6 +282,9 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
 }
+.features .content-wrapper {
+  margin: 50px, 0 10px 0;
+}
 .features h2{
   margin: 0;
   padding: 0 20px 60px 0;
@@ -299,7 +302,11 @@ aside {
 }
 .features article {
   width: 57%;
-  margin: 52px 0;
+  padding-bottom: 60px;
+}
+.features i {
+  font-size: 3.75em;
+  padding-bottom: 40px;
 }
 .reviews {
   display: flex;
@@ -529,9 +536,18 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row nowrap;
-    flex-basis: 35%;
-    margin: 45px;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+  .features h2 {
+    padding-bottom: 35px;
+  }
+  .features .features-item-description {
+    width: 62%;
+  }
+  .features i {
+    font-size: 4.5em;
+    padding-bottom: 30px;
   }
   .reviews h2 {
     width: 80%;
@@ -652,7 +668,7 @@ aside {
     width: 88%;
   }
   .features-items article {
-    flex-basis: 20%;
+    flex-basis: 33%;
   }
 
   /*FOOTER*/
