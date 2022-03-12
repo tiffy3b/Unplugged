@@ -576,19 +576,15 @@ aside {
   }
 
 /*Footer*/
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+
   footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
   }
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
   footer .contact {
     margin-bottom: 0;
@@ -683,7 +679,7 @@ aside {
 
   /*FOOTER*/
   footer .content-wrapper {
-    width: 90%;
+    width: 88%;
   }
   /*ABOUT*/
   .mission-content h2 {
