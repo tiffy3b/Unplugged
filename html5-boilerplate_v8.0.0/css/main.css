@@ -170,6 +170,7 @@ input[type=button] {
     font-style: normal;
   }
 
+
   /*End Custom Style*/
    .content-wrapper {
   width: 90%;
@@ -248,9 +249,13 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 footer .copyright {
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 /*****Mobile main homepage*****/
 
@@ -582,15 +587,20 @@ aside {
   }
   .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
   footer .contact {
     margin-bottom: 0;
   }
+
+  footer .social-icons {
+    width: 12.75em;
+    justify-content: space-between;
+  }
   footer .copyright {
-    width: 31%;
     text-align: center;
+    width: 100%;
   }
 
 /*About Page*/
